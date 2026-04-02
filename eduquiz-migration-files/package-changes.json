@@ -1,0 +1,22 @@
+{
+  "_comment": "DIFF: Changes needed to package.json",
+
+  "remove_dependencies": {
+    "firebase": "^12.9.0"
+  },
+
+  "add_dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+
+  "add_devDependencies_for_migration_script_only": {
+    "firebase-admin": "^12.0.0",
+    "dotenv": "^16.4.0"
+  },
+
+  "_instructions": [
+    "Run: npm uninstall firebase",
+    "Run: npm install @supabase/supabase-js",
+    "For migration script only (can be removed after): npm install firebase-admin dotenv"
+  ]
+}
